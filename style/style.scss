@@ -1,0 +1,99 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+/* Colors */
+$white: hsl(0, 0%, 100%);
+$lightPink: hsl(275, 100%, 97%);
+$grayishPurple: hsl(292, 16%, 49%);
+$darkPurple: hsl(292, 42%, 14%);
+
+body {
+    background-color: $lightPink;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.top-section {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    padding: 20px;
+    height: 250px;
+    max-height: 600px;
+}
+
+.main-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .faq-container {
+        background-color: $white;
+        max-width: fit-content;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        max-width: 600px;
+        padding: 40px;
+
+        .faqs-title {
+            font-weight: 700;
+            font-size: 40px;
+            margin-left: 20px;
+        }
+
+        .accordion {
+            .accordion-item {
+                border-bottom: 1px solid $lightPink;
+                width: 100%;
+
+                .accordion-header {
+                    .accordion-button {
+                        border: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: transparent;
+                        border: none;
+                        color: $darkPurple;
+                        font-family: 'Work Sans', sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                        padding: 0;
+                        margin: 0;
+
+                        svg {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    :active {
+                        color: #AD28EB;
+                    }
+
+                    :focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .accordion-body {
+                    p {
+                        color: $grayishPurple;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            :last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.footer {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
