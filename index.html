@@ -8,8 +8,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | FAQ accordion</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -24,42 +24,30 @@
         </svg>
         <h1 class="faqs-title">FAQs</h1>
       </div>
-      <div class="accordion" id="faqs-accordion">
+      <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-one">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#collapse-one" aria-expanded="false" aria-controls="collapse-one">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
               What is Frontend Mentor, and how will it help me?
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
-                <path fill="#AD28EB"
-                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
-              </svg>
             </button>
           </h2>
-          <div id="collapse-one" class="accordion-collapse collapse" aria-labelledby="heading-one"
-            data-bs-parent="#faqs-accordion">
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              <p>
-                Frontend Mentor offers realistic coding challenges to help developers improve their
-                frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-                all levels and ideal for portfolio building.
-              </p>
+              Frontend Mentor offers realistic coding challenges to help developers improve their
+              frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+              all levels and ideal for portfolio building.
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-two">
+          <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Is Frontend Mentor free?
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
-                <path fill="#AD28EB"
-                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
-              </svg>
             </button>
           </h2>
-          <div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="heading-two"
-            data-bs-parent="#faqs-accordion">
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Yes, Frontend Mentor offers both free and premium coding challenges, with the free
               option providing access to a range of projects suitable for all skill levels.
@@ -67,18 +55,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-three">
+          <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Can I use Frontend Mentor projects in my portfolio?
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
-                <path fill="#AD28EB"
-                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
-              </svg>
             </button>
           </h2>
-          <div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="heading-three"
-            data-bs-parent="#faqs-accordion">
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
               way to showcase your skills to potential employers!
@@ -86,18 +69,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-four">
+          <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-four" aria-expanded="false" aria-controls="collapse-four">
-              How can I get help if I'm stuck on a Frontend Mentor challenge?
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
-                <path fill="#AD28EB"
-                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
-              </svg>
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How can I get help if I'm stuck on a challenge?
             </button>
           </h2>
-          <div id="collapse-four" class="accordion-collapse collapse" aria-labelledby="heading-four"
-            data-bs-parent="#faqs-accordion">
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               The best place to get help is inside Frontend Mentor's Discord community. There's a help
               channel where you can ask questions and seek support from other community members.
@@ -110,49 +88,15 @@
     <footer class="footer">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/jessicaArvizu">Jessica Arvizu</a>.
-      Using HTML, CSS, Vainilla JS, & Bootstrap.
+      Using HTML, CSS, JS, & Bootstrap.
     </footer>
 </body>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var accordionButtons = document.querySelectorAll('.accordion-button');
-
-    accordionButtons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        var svg = this.querySelector('svg');
-        if (this.classList.contains('collapsed')) {
-          svg.innerHTML = '<path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/>';
-        } else {
-          svg.innerHTML = '<path fill="#301534" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/>';
-        }
-      });
-    });
-
-    var accordionItems = document.querySelectorAll('.accordion-item');
-
-    accordionItems.forEach(function (item) {
-      item.addEventListener('shown.bs.collapse', function () {
-        updateIcon(this.querySelector('.accordion-button'));
-      });
-
-      item.addEventListener('hidden.bs.collapse', function () {
-        updateIcon(this.querySelector('.accordion-button'));
-      });
-    });
-
-    function updateIcon(button) {
-      var svg = button.querySelector('svg');
-      if (button.classList.contains('collapsed')) {
-        svg.innerHTML = '<path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/>';
-      } else {
-        svg.innerHTML = '<path fill="#301534" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/>';
-      }
-    }
-  });
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script>
+
+</script>
 
 </html>

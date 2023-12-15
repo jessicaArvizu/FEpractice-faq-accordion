@@ -20,7 +20,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .main-container .faq-container {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #fff;
   max-width: fit-content;
   display: block;
   margin: 0 auto;
@@ -34,39 +34,33 @@ body {
   margin-left: 20px;
 }
 .main-container .faq-container .accordion .accordion-item {
+  border-top: none;
+  border-right: none;
+  border-left: none;
   border-bottom: 1px solid hsl(275, 100%, 97%);
-  width: 100%;
+}
+.main-container .faq-container .accordion .accordion-item .accordion-header {
+  font-size: 16px;
 }
 .main-container .faq-container .accordion .accordion-item .accordion-header .accordion-button {
   border: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: transparent;
-  border: none;
   color: hsl(292, 42%, 14%);
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
 }
-.main-container .faq-container .accordion .accordion-item .accordion-header .accordion-button svg {
-  margin-left: 10px;
+.main-container .faq-container .accordion .accordion-item .accordion-header .accordion-button:focus, .main-container .faq-container .accordion .accordion-item .accordion-header .accordion-button:active {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
-.main-container .faq-container .accordion .accordion-item .accordion-header :active {
+.main-container .faq-container .accordion .accordion-item .accordion-header:focus, .main-container .faq-container .accordion .accordion-item .accordion-header:active {
   color: #AD28EB;
 }
-.main-container .faq-container .accordion .accordion-item .accordion-header :focus {
-  outline: none;
-  box-shadow: none;
-}
-.main-container .faq-container .accordion .accordion-item .accordion-body p {
+.main-container .faq-container .accordion .accordion-item .accordion-body {
   color: hsl(292, 16%, 49%);
   font-size: 16px;
-}
-.main-container .faq-container .accordion :last-child {
-  border-bottom: none;
 }
 
 .footer {
